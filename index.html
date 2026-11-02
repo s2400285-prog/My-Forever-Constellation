@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050014" />
+    <meta
+      name="description"
+      content="Six little infinities. A universe of memories, letters, and promises, made by James for his baby Julie."
+    />
+    <title>A Universe Made for Julie · With love, James</title>
+    <link
+      rel="icon"
+      href="assets/icons/constellation.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body data-universe="0">
+    <a class="skip-link" href="#main">Skip to the universe</a>
+    <svg
+      class="svg-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path
+          d="M12 1 14.5 9.5 23 12 14.5 14.5 12 23 9.5 14.5 1 12 9.5 9.5Z"
+          fill="currentColor"
+        />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path
+          d="M4 12h15m-6-6 6 6-6 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24">
+        <path
+          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+        />
+      </symbol>
+      <symbol id="icon-volume" viewBox="0 0 24 24">
+        <path
+          d="m11 5-6 4H2v6h3l6 4V5Zm4 3a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24">
+        <path d="m9 5 11 7-11 7V5Z" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-pause" viewBox="0 0 24 24">
+        <path d="M7 5h3v14H7zm7 0h3v14h-3z" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path
+          d="m6 6 12 12M6 18 18 6"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+      </symbol>
+    </svg>
+
+    <div class="space-backdrop" aria-hidden="true">
+      <div class="nebula nebula-one"></div>
+      <div class="nebula nebula-two"></div>
+      <div class="galaxy-spiral"></div>
+      <canvas id="space-canvas"></canvas>
+      <div class="grain"></div>
+    </div>
+
+    <div id="app-shell">
+      <header class="site-header">
+        <button
+          class="brand"
+          id="brand"
+          aria-label="A universe for Julie. Return to this chapter's introduction."
+        >
+          <span class="brand-mark" aria-hidden="true"
+            ><svg><use href="#icon-star" /></svg><i></i
+          ></span>
+          <span
+            >A universe <em>for Julie</em
+            ><span class="brand-subtitle"
+              >A LITTLE INFINITY, JUST FOR YOU</span
+            ></span
+          >
+        </button>
+        <nav class="header-nav" aria-label="Main navigation">
+          <button class="text-button" id="journey-link">The journey</button>
+          <button class="text-button secret-nav" data-secret="little">
+            A little secret <span>✧</span>
+          </button>
+          <button class="sound-toggle" id="sound-toggle" aria-pressed="false">
+            <svg class="icon"><use href="#icon-volume" /></svg
+            ><span>Sound off</span><span class="sound-dot"></span>
+          </button>
+        </nav>
+      </header>
+
+      <main id="main" tabindex="-1">
+        <section class="universe-hero" aria-labelledby="universe-title">
+          <div class="hero-copy">
+            <p class="chapter-eyebrow">
+              <span class="tiny-orbit" aria-hidden="true"></span
+              ><span id="chapter-label">UNIVERSE 01</span
+              ><span class="eyebrow-line"></span
+              ><span id="chapter-name">THE BEGINNING</span>
+            </p>
+            <h1 id="universe-title" tabindex="-1">
+              Welcome to<br />My Universe,<br /><button
+                class="name-button"
+                data-julie
+                aria-label="Julie. Send a little burst of love."
+              >
+                Julie.
+              </button>
+            </h1>
+            <p class="hero-description" id="hero-description">
+              Out of billions of stars, countless galaxies, and endless
+              possibilities, somehow, my universe became brighter when you
+              entered it.
+            </p>
+            <button class="primary-button" id="hero-action">
+              <span>ENTER MY UNIVERSE</span
+              ><svg class="icon heart-icon"><use href="#icon-heart" /></svg
+              ><span class="button-divider"></span
+              ><svg class="icon"><use href="#icon-arrow" /></svg>
+            </button>
+            <p class="hero-footnote" id="hero-footnote">
+              <span class="mini-star">✧</span> No distance. No limits. Just you
+              and me.
+            </p>
+          </div>
+          <div class="hero-art" id="hero-art"></div>
+          <span class="vertical-note" aria-hidden="true"
+            >EST. IN MY HEART &nbsp; · &nbsp; INFINITELY YOURS</span
+          >
+          <div class="hero-bottom">
+            <span
+              ><span class="status-light"></span> A SPACE WHERE YOU ARE ALWAYS
+              LOVED</span
+            ><span class="scroll-hint">SCROLL TO EXPLORE <span>↓</span></span>
+          </div>
+        </section>
+
+        <nav
+          class="journey-map"
+          id="journey-map"
+          aria-label="Your journey through six universes"
+        >
+          <div class="journey-caption">
+            <svg class="icon"><use href="#icon-star" /></svg
+            ><span>OUR LITTLE<br /><strong>UNIVERSE</strong></span>
+          </div>
+          <div class="chapter-stops" id="chapter-stops"></div>
+          <span class="journey-infinity" aria-hidden="true">∞</span>
+        </nav>
+
+        <div id="chapter-content">
+          <section
+            class="discovery-section content-width"
+            id="discovery"
+            aria-labelledby="discovery-title"
+            hidden
+          >
+            <div class="section-heading">
+              <p class="eyebrow" id="discovery-eyebrow"></p>
+              <h2 id="discovery-title"></h2>
+              <p id="discovery-description"></p>
+            </div>
+            <div id="interactive-scene"></div>
+          </section>
+
+          <section
+            class="letter-section content-width"
+            id="letter-section"
+            aria-labelledby="letter-title"
+            hidden
+          >
+            <div class="letter-prelude">
+              <span class="fine-line"></span
+              ><svg class="icon"><use href="#icon-heart" /></svg
+              ><span class="fine-line"></span>
+            </div>
+            <article class="letter-card">
+              <div class="letter-card-top">
+                <span class="eyebrow" id="letter-number">LETTER NO. 01</span
+                ><span class="letter-stamp" aria-hidden="true"
+                  >J <span>♡</span> J</span
+                >
+              </div>
+              <p class="letter-to">To my baby Julie,</p>
+              <h2 id="letter-title"></h2>
+              <button class="text-button typing-skip" id="typing-skip" hidden>
+                Show the full letter <span>↓</span>
+              </button>
+              <div class="letter-body" id="letter-body"></div>
+              <div class="letter-signature" id="letter-signature">
+                Always finding my way to you,<br /><span>James</span
+                ><svg class="icon"><use href="#icon-heart" /></svg>
+              </div>
+              <div class="letter-actions" id="letter-actions"></div>
+            </article>
+          </section>
+
+          <section
+            class="small-wonders content-width"
+            id="small-wonders"
+            aria-label="Little surprises"
+          >
+            <div>
+              <span class="mini-star">✧</span>
+              <p>Some things are too sweet<br />to leave among the stars.</p>
+            </div>
+            <button class="outline-button" id="random-note">
+              Catch a little love note
+              <svg class="icon"><use href="#icon-star" /></svg>
+            </button>
+            <button class="text-button" data-secret="miss">
+              Do you know how much I miss you? <span>↗</span>
+            </button>
+          </section>
+
+          <section class="next-section content-width" id="next-section" hidden>
+            <div>
+              <p class="eyebrow" id="next-eyebrow">
+                THERE'S MORE OF MY HEART TO DISCOVER
+              </p>
+              <h2 id="next-title">Shall we keep exploring?</h2>
+            </div>
+            <button class="primary-button" id="next-universe">
+              <span>Next universe</span
+              ><svg class="icon"><use href="#icon-arrow" /></svg>
+            </button>
+            <p class="transition-note">
+              A ten-second journey through the stars. Skip whenever you like.
+            </p>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <span>Made with love, by <strong>James Traigo.</strong></span
+        ><span
+          >FOR MY BABY JULIE
+          <svg class="icon"><use href="#icon-heart" /></svg> IN EVERY
+          UNIVERSE</span
+        ><span>One girl. My favorite infinity.</span>
+      </footer>
+
+      <aside class="music-player" aria-label="Background music player">
+        <div class="galaxy-disc" id="galaxy-disc" aria-hidden="true">
+          <span></span>
+        </div>
+        <div class="track-info">
+          <span id="track-title">Somewhere, with you</span
+          ><span id="music-status">A LITTLE MUSIC FOR OUR JOURNEY</span>
+        </div>
+        <button
+          class="player-play icon-button"
+          id="music-play"
+          aria-label="Play background music"
+          aria-pressed="false"
+        >
+          <svg class="icon"><use href="#icon-play" /></svg>
+        </button>
+        <span class="music-time" id="music-current">0:00</span>
+        <input
+          id="music-progress"
+          class="music-progress"
+          type="range"
+          min="0"
+          max="100"
+          step="0.1"
+          value="0"
+          aria-label="Music position"
+          disabled
+        />
+        <span class="music-time" id="music-duration">0:00</span>
+        <label class="volume-control"
+          ><svg class="icon" aria-hidden="true"><use href="#icon-volume" /></svg
+          ><span class="sr-only">Music volume</span
+          ><input
+            id="music-volume"
+            type="range"
+            min="0"
+            max="100"
+            value="35"
+            aria-label="Music volume"
+        /></label>
+      </aside>
+    </div>
+
+    <div
+      class="transition-overlay"
+      id="transition-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="transition-title"
+      hidden
+    >
+      <canvas id="transition-canvas" aria-hidden="true"></canvas>
+      <div class="portal-rings" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="transition-content">
+        <p class="eyebrow" id="transition-title">TRAVELING THROUGH MY HEART</p>
+        <span class="transition-symbol" aria-hidden="true">✧</span>
+        <p id="transition-phrase"></p>
+        <div class="transition-progress">
+          <span id="transition-progress"></span>
+        </div>
+        <p class="transition-count">
+          <span id="transition-countdown">10</span> SECONDS TO ANOTHER INFINITY
+        </p>
+      </div>
+      <button class="text-button transition-skip" id="transition-skip">
+        Skip journey <span>↗</span>
+      </button>
+    </div>
+
+    <dialog
+      class="secret-dialog"
+      id="secret-dialog"
+      aria-labelledby="dialog-title"
+      aria-describedby="dialog-message"
+    >
+      <button
+        class="dialog-close icon-button"
+        id="dialog-close"
+        aria-label="Close message"
+      >
+        <svg class="icon"><use href="#icon-close" /></svg>
+      </button>
+      <div class="dialog-image" id="dialog-image" role="img" hidden></div>
+      <span class="dialog-star" aria-hidden="true">✧</span>
+      <p class="eyebrow" id="dialog-eyebrow">A LITTLE PIECE OF MY HEART</p>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-date" id="dialog-date" hidden></p>
+      <div class="dialog-message" id="dialog-message"></div>
+      <p class="dialog-signature">With love, James <span>♡</span></p>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div class="particle-layer" id="particle-layer" aria-hidden="true"></div>
+    <audio
+      id="background-music"
+      src="assets/music.mp3"
+      preload="metadata"
+      loop
+    ></audio>
+    <noscript
+      ><div class="noscript-message">
+        This little universe needs JavaScript for its interactive journey.
+        Please enable it to read James's letters to Julie.
+      </div></noscript
+    >
+  </body>
+</html>

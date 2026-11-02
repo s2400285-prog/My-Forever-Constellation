@@ -1,0 +1,767 @@
+@media (min-width: 1700px) {
+  .universe-hero {
+    min-height: 790px;
+  }
+  .hero-art {
+    height: 540px;
+  }
+  .planet-button {
+    width: 360px;
+    height: 360px;
+  }
+}
+@media (max-width: 1150px) {
+  .site-header {
+    padding: 26px 5%;
+    min-height: 100px;
+  }
+  .header-nav {
+    gap: 22px;
+  }
+  .universe-hero {
+    padding: 60px 7% 85px;
+    min-height: 650px;
+    gap: 0;
+  }
+  h1 {
+    font-size: clamp(65px, 7.3vw, 87px);
+  }
+  .hero-art {
+    height: 410px;
+  }
+  .planet-button {
+    width: 245px;
+    height: 245px;
+  }
+  .hero-description {
+    max-width: 330px;
+  }
+  .planet-label {
+    bottom: 15px;
+  }
+  .journey-map {
+    padding: 20px 5%;
+    gap: 24px;
+  }
+  .journey-caption {
+    display: none;
+  }
+  .chapter-stop {
+    font-size: 9px;
+    gap: 7px;
+  }
+  .chapter-stop.current::after {
+    bottom: -20px;
+  }
+  .journey-infinity {
+    font-size: 25px;
+  }
+  .content-width {
+    width: calc(100% - 90px);
+  }
+  .moon-button {
+    width: 255px;
+    height: 255px;
+  }
+  .moon-heart-orbit {
+    width: 340px;
+    height: 340px;
+  }
+  .site-footer > span:last-child {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .site-header {
+    padding: 23px 6%;
+    min-height: 95px;
+  }
+  .brand {
+    font-size: 22px;
+  }
+  .brand-subtitle {
+    font-size: 6px;
+    letter-spacing: 2px;
+  }
+  .brand-mark {
+    width: 29px;
+  }
+  .header-nav {
+    gap: 20px;
+  }
+  .secret-nav {
+    display: none;
+  }
+  .universe-hero {
+    padding: 55px 7% 85px;
+    min-height: 610px;
+    grid-template-columns: 1.05fr 1fr;
+  }
+  h1 {
+    font-size: 68px;
+    letter-spacing: -1.5px;
+  }
+  .chapter-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.4px;
+    gap: 9px;
+    margin-bottom: 23px;
+  }
+  .hero-description {
+    font-size: 11px;
+  }
+  .hero-art {
+    height: 350px;
+    margin-left: -15px;
+  }
+  .planet-button {
+    width: 200px;
+    height: 200px;
+  }
+  .planet-label span {
+    font-size: 6px;
+  }
+  .planet-label p {
+    font-size: 13px;
+  }
+  .planet-label {
+    bottom: -5px;
+  }
+  .orbit-path {
+    width: 108%;
+    height: 60%;
+  }
+  .orbit-path.outer {
+    height: 85%;
+    width: 122%;
+  }
+  .primary-button {
+    font-size: 8px;
+    padding: 15px 17px;
+    gap: 12px;
+  }
+  .hero-bottom {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+  .vertical-note {
+    right: 12px;
+    font-size: 6px;
+  }
+  .journey-map {
+    gap: 18px;
+    padding: 15px 5%;
+  }
+  .chapter-stops {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .chapter-stop {
+    font-size: 9px;
+    padding: 6px 3px;
+  }
+  .chapter-stop.current::after {
+    bottom: -4px;
+    width: 15px;
+  }
+  .chapter-stop .stop-number {
+    font-size: 11px;
+  }
+  .journey-infinity {
+    display: none;
+  }
+  .content-width {
+    width: calc(100% - 60px);
+  }
+  .letter-card {
+    padding: 40px 40px;
+  }
+  .small-wonders {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 25px;
+  }
+  .small-wonders > div {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .small-wonders > .text-button {
+    max-width: none;
+  }
+  .photo-gallery {
+    gap: 9px;
+  }
+  .photo-card {
+    padding: 5px 5px 10px;
+  }
+  .photo-card span {
+    font-size: 14px;
+    padding: 8px 3px 0;
+  }
+  .mini-planet {
+    width: 66px;
+    height: 66px;
+  }
+  .memory-planet:nth-child(3) .mini-planet {
+    width: 80px;
+    height: 80px;
+  }
+  .memory-planet span:last-child {
+    font-size: 9px;
+  }
+  .solar-system {
+    min-height: 260px;
+  }
+  .moon-button {
+    width: 215px;
+    height: 215px;
+  }
+  .moon-heart-orbit {
+    width: 285px;
+    height: 285px;
+  }
+  .moon-scene .planet-label {
+    bottom: -5px;
+  }
+  .heart-galaxy .heart-center {
+    font-size: 26px;
+  }
+  .hero-constellation .hero-star-button {
+    font-size: 21px;
+  }
+  .hero-constellation svg {
+    width: 100%;
+  }
+  .hero-constellation .planet-label {
+    bottom: 0;
+  }
+  .site-footer {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .site-footer > span:nth-child(2) {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 600px) {
+  .site-header {
+    padding: 20px 6%;
+    gap: 10px;
+    min-height: 88px;
+  }
+  .brand {
+    font-size: 22px;
+    gap: 10px;
+  }
+  .brand-subtitle {
+    font-size: 5.5px;
+    letter-spacing: 1.5px;
+    margin-top: 7px;
+  }
+  .brand-mark svg {
+    width: 24px;
+  }
+  .brand-mark i {
+    width: 36px;
+    height: 16px;
+  }
+  .header-nav {
+    gap: 8px;
+  }
+  .header-nav > .text-button {
+    display: none;
+  }
+  .sound-toggle {
+    padding: 9px 11px;
+    gap: 7px;
+    font-size: 9px;
+  }
+  .sound-dot {
+    display: none;
+  }
+  .sound-toggle .icon {
+    width: 13px;
+  }
+  .universe-hero {
+    padding: 43px 8% 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-height: 0;
+  }
+  .hero-copy {
+    width: 100%;
+    max-width: 440px;
+    align-self: flex-start;
+  }
+  .chapter-eyebrow {
+    margin-bottom: 23px;
+    font-size: 7px;
+    letter-spacing: 1.6px;
+  }
+  h1 {
+    font-size: clamp(62px, 14vw, 82px);
+    line-height: 0.98;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+  h1 br:nth-child(2) {
+    display: none;
+  }
+  .name-button {
+    margin-left: 7px;
+  }
+  .hero-description {
+    font-size: 11px;
+    line-height: 1.9;
+    max-width: 330px;
+    margin-bottom: 23px;
+  }
+  .primary-button {
+    min-height: 50px;
+    padding: 15px 20px;
+    font-size: 8px;
+  }
+  .hero-footnote {
+    font-size: 8px;
+    margin-top: 12px;
+  }
+  .hero-art {
+    width: 100%;
+    height: 330px;
+    max-width: 370px;
+    margin: 10px auto 0;
+  }
+  .planet-button {
+    width: 210px;
+    height: 210px;
+  }
+  .planet-label {
+    bottom: -3px;
+  }
+  .planet-label span {
+    font-size: 7px;
+  }
+  .planet-label p {
+    font-size: 14px;
+  }
+  .orbit-path {
+    height: 63%;
+    width: 102%;
+  }
+  .orbit-path.outer {
+    width: 119%;
+    height: 83%;
+  }
+  .vertical-note {
+    display: none;
+  }
+  .hero-bottom {
+    left: 8%;
+    right: 8%;
+    bottom: 20px;
+    font-size: 5.5px;
+    letter-spacing: 1.3px;
+    gap: 10px;
+  }
+  .hero-bottom .scroll-hint {
+    letter-spacing: 0.5px;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .hero-bottom .scroll-hint span {
+    font-size: 12px;
+  }
+  .hero-bottom .status-light {
+    width: 3px;
+    height: 3px;
+    margin-right: 5px;
+    vertical-align: 1px;
+  }
+  .journey-map {
+    padding: 15px 6%;
+  }
+  .chapter-stops {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 15px;
+  }
+  .chapter-stop {
+    font-size: 9px;
+    gap: 9px;
+    padding: 8px 0;
+  }
+  .chapter-stop .stop-number {
+    font-size: 12px;
+  }
+  .chapter-stop.current::after {
+    bottom: 1px;
+    left: 23px;
+    width: 18px;
+  }
+  .content-width {
+    width: calc(100% - 40px);
+  }
+  .discovery-section {
+    padding-top: 70px;
+  }
+  .section-heading {
+    padding: 0 7px;
+    margin-bottom: 25px;
+  }
+  .eyebrow {
+    font-size: 7px;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 37px;
+  }
+  .section-heading > p:last-child {
+    font-size: 11px;
+  }
+  .letter-section {
+    padding-top: 50px;
+  }
+  .letter-card {
+    padding: 30px 25px;
+    border-radius: 9px;
+  }
+  .letter-card-top {
+    margin-bottom: 25px;
+  }
+  .letter-card h2 {
+    font-size: 33px;
+    margin-bottom: 25px;
+  }
+  .letter-to {
+    font-size: 19px;
+  }
+  .letter-body {
+    font-size: 13px;
+    line-height: 1.95;
+  }
+  .letter-body blockquote {
+    font-size: 23px;
+    padding-left: 16px;
+  }
+  .letter-body p {
+    margin-bottom: 20px;
+  }
+  .letter-actions {
+    gap: 10px;
+  }
+  .letter-actions button {
+    width: 100%;
+    font-size: 10px;
+  }
+  .small-wonders {
+    padding: 40px 0;
+    gap: 19px;
+  }
+  .small-wonders p {
+    font-size: 20px;
+  }
+  .small-wonders > .text-button {
+    font-size: 10px;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .next-section {
+    padding: 35px 5px;
+    flex-direction: column;
+    text-align: center;
+    gap: 23px;
+  }
+  .next-section h2 {
+    font-size: 32px;
+  }
+  .next-section .eyebrow {
+    font-size: 6px;
+  }
+  .transition-note {
+    text-align: center;
+    font-size: 9px;
+    flex-basis: auto;
+    max-width: 250px;
+    line-height: 1.8;
+  }
+  .site-footer {
+    padding: 27px 6% 105px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 9px;
+  }
+  .site-footer > span:nth-child(2) {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+  .music-player {
+    bottom: 12px;
+    padding: 9px 12px 9px 10px;
+    gap: 9px;
+    width: calc(100% - 24px);
+  }
+  .galaxy-disc {
+    width: 30px;
+    height: 30px;
+  }
+  .galaxy-disc span {
+    inset: 12px;
+  }
+  .track-info {
+    min-width: 0;
+    flex: 1;
+  }
+  .track-info > span:first-child {
+    font-size: 9px;
+  }
+  .track-info > span:last-child {
+    font-size: 5px;
+    letter-spacing: 0.7px;
+  }
+  .music-time {
+    font-size: 7px;
+  }
+  .music-progress {
+    max-width: 62px;
+    width: 35px;
+  }
+  .volume-control {
+    padding-left: 5px;
+    gap: 5px;
+  }
+  .volume-control .icon {
+    display: none;
+  }
+  .volume-control input {
+    width: 38px;
+  }
+  .player-play {
+    width: 29px;
+    height: 29px;
+  }
+  .music-player .music-time:nth-of-type(2) {
+    display: none;
+  }
+  .solar-system {
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 10px 0 25px;
+    min-height: 380px;
+    justify-content: center;
+  }
+  .solar-system::before {
+    height: 280px;
+    left: 7%;
+    right: 7%;
+    transform: rotate(-17deg);
+  }
+  .memory-planet {
+    width: 31%;
+    min-height: 160px;
+    gap: 18px;
+  }
+  .memory-planet:nth-child(even) {
+    transform: none;
+  }
+  .memory-planet:nth-child(2) {
+    transform: translateY(-15px);
+  }
+  .mini-planet {
+    width: 65px;
+    height: 65px;
+  }
+  .memory-planet:nth-child(3) .mini-planet {
+    width: 70px;
+    height: 70px;
+  }
+  .memory-planet span:last-child {
+    font-size: 10px;
+    max-width: 100px;
+  }
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+  }
+  .photo-card {
+    padding: 7px 7px 12px;
+  }
+  .photo-card span {
+    font-size: 20px;
+    padding: 11px 4px 0;
+  }
+  .photo-card:last-child {
+    grid-column: 1/-1;
+    width: calc(50% - 6.5px);
+    justify-self: center;
+  }
+  .gallery-note {
+    font-size: 9px;
+    padding: 0 10px;
+  }
+  .reason-field {
+    height: 460px;
+  }
+  .reason-star {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+  .reason-reveal {
+    padding: 0 10px;
+    min-height: 155px;
+  }
+  .reason-reveal .reason-message {
+    font-size: 25px;
+  }
+  .reason-reveal .reason-detail {
+    font-size: 11px;
+  }
+  .reason-counter {
+    font-size: 7px;
+    letter-spacing: 1.7px;
+  }
+  .moon-button {
+    width: 220px;
+    height: 220px;
+  }
+  .moon-heart-orbit {
+    width: 285px;
+    height: 285px;
+  }
+  .envelope-button {
+    width: 205px;
+    height: 135px;
+  }
+  .envelope-caption {
+    font-size: 21px;
+  }
+  .constellation-board {
+    height: 340px;
+    margin: 0 10px;
+  }
+  .constellation-star span {
+    font-size: 8px;
+    width: 76px;
+  }
+  .constellation-note {
+    font-size: 23px;
+    padding: 0 12px;
+    min-height: 110px;
+  }
+  .heart-galaxy .heart-center {
+    font-size: 29px;
+  }
+  .heart-galaxy .planet-label {
+    bottom: 0;
+  }
+  .hero-constellation .hero-star-button {
+    width: 44px;
+    height: 44px;
+  }
+  .secret-dialog {
+    padding: 43px 25px 30px;
+  }
+  .secret-dialog h2 {
+    font-size: 32px;
+  }
+  .dialog-message {
+    font-size: 12px;
+  }
+  .dialog-image {
+    margin: -43px -25px 25px;
+    height: 245px;
+  }
+  .dialog-date {
+    font-size: 9px;
+  }
+  .toast {
+    font-size: 11px;
+    padding: 13px 18px;
+    bottom: 85px;
+  }
+  .transition-content {
+    padding: 24px;
+  }
+  .transition-content .eyebrow {
+    font-size: 6px;
+    letter-spacing: 2.7px;
+  }
+  #transition-phrase {
+    font-size: 34px;
+    min-height: 145px;
+  }
+  .transition-count {
+    font-size: 6px;
+    letter-spacing: 1.5px;
+  }
+  .transition-skip {
+    right: 22px;
+    bottom: 28px;
+  }
+  .final-words {
+    font-size: 8px;
+    letter-spacing: 2px;
+    padding: 28px 10px;
+  }
+  .final-surprise-wrap {
+    padding: 35px 10px 50px;
+  }
+  .all-visited-note {
+    font-size: 10px;
+  }
+  .discovery-section .primary-button {
+    max-width: 100%;
+    letter-spacing: 1px;
+    gap: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .brand {
+    font-size: 19px;
+  }
+  .brand-subtitle {
+    font-size: 5px;
+  }
+  .hero-bottom {
+    letter-spacing: 0.5px;
+  }
+  .chapter-eyebrow {
+    font-size: 6px;
+  }
+  .hero-art {
+    height: 300px;
+  }
+  .music-progress {
+    display: none;
+  }
+  .music-player {
+    gap: 7px;
+  }
+  .track-info > span:last-child {
+    font-size: 4.5px;
+  }
+  .volume-control input {
+    width: 32px;
+  }
+  .chapter-stop {
+    font-size: 8px;
+  }
+  .letter-card {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .chapter-stop {
+    min-height: 44px;
+  }
+  .hero-memory {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}

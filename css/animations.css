@@ -1,0 +1,466 @@
+@keyframes spiral-turn {
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes veil-darken {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes galaxy-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes nebula-drift {
+  0%,
+  100% {
+    translate: 0 0;
+    rotate: -4deg;
+    scale: 1;
+  }
+  50% {
+    translate: 3% -3%;
+    rotate: 4deg;
+    scale: 1.07;
+  }
+}
+@keyframes planet-turn {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 160px 35px;
+  }
+}
+@keyframes asteroid-float {
+  0%,
+  100% {
+    translate: 0 0;
+    rotate: -10deg;
+  }
+  50% {
+    translate: 9px -17px;
+    rotate: 25deg;
+  }
+}
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.4;
+    scale: 0.85;
+  }
+  50% {
+    opacity: 1;
+    scale: 1.12;
+  }
+}
+@keyframes disc-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes chapter-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes enter-galaxy {
+  0% {
+    scale: 1;
+    filter: brightness(1);
+  }
+  50% {
+    scale: 1.2;
+    filter: brightness(1.45);
+  }
+  100% {
+    scale: 1;
+    filter: brightness(1);
+  }
+}
+@keyframes reveal-note {
+  0% {
+    opacity: 0;
+    translate: 0 8px;
+    scale: 0.96;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+@keyframes heart-orbit {
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes moon-turn {
+  0%,
+  100% {
+    rotate: -6deg;
+  }
+  50% {
+    rotate: 7deg;
+  }
+}
+@keyframes petals-drift {
+  0% {
+    translate: 0 -30px;
+    rotate: 0;
+    opacity: 0;
+  }
+  15%,
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    translate: 70px 260px;
+    rotate: 160deg;
+    opacity: 0;
+  }
+}
+@keyframes constellation-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes portal-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes portal-breathe {
+  0%,
+  100% {
+    scale: 0.9;
+    opacity: 0.4;
+  }
+  50% {
+    scale: 1.1;
+    opacity: 0.8;
+  }
+}
+@keyframes shoot-across {
+  0%,
+  82% {
+    opacity: 0;
+    translate: 35px -15px;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    translate: -110px 65px;
+  }
+}
+.galaxy-spiral {
+  animation: spiral-turn 180s linear infinite;
+}
+.heart-orbit {
+  transform-origin: 250px 220px;
+  animation: galaxy-orbit 75s linear infinite;
+}
+.nebula-one {
+  animation: nebula-drift 40s ease-in-out infinite;
+}
+.nebula-two {
+  animation: nebula-drift 32s ease-in-out -15s infinite;
+}
+.planet-sphere {
+  animation: planet-turn 100s linear infinite;
+}
+.asteroid {
+  animation: asteroid-float 13s ease-in-out infinite;
+}
+.asteroid.a2 {
+  animation-duration: 18s;
+  animation-delay: -7s;
+}
+.asteroid.a3 {
+  animation-duration: 16s;
+  animation-delay: -10s;
+}
+.asteroid.a4 {
+  animation-duration: 11s;
+  animation-delay: -4s;
+}
+.orbit-spark {
+  animation: sparkle 5s ease-in-out infinite;
+}
+.spark-two {
+  animation-delay: -2s;
+}
+.spark-three {
+  animation-delay: -4s;
+}
+.shooting-note {
+  animation: shoot-across 17s linear infinite;
+}
+.galaxy-disc {
+  animation: disc-spin 15s linear infinite;
+  animation-play-state: paused;
+}
+.galaxy-disc.playing {
+  animation-play-state: running;
+}
+.chapter-arriving .hero-copy,
+.chapter-arriving .hero-art {
+  animation: chapter-arrive 1.3s var(--ease) both;
+}
+.chapter-arriving .hero-art {
+  animation-delay: 0.12s;
+}
+.entering .hero-art {
+  animation: enter-galaxy 1.4s var(--ease);
+}
+.reason-star > span {
+  animation: sparkle 5s ease-in-out infinite;
+  animation-delay: calc(var(--star-index, 0) * -0.37s);
+}
+.reason-reveal.revealed {
+  animation: reveal-note 0.5s var(--ease);
+}
+.secret-dialog[open] {
+  animation: reveal-note 0.4s var(--ease);
+}
+.moon-heart-orbit {
+  animation: heart-orbit 40s linear infinite;
+}
+.moon-surface {
+  animation: moon-turn 70s ease-in-out infinite;
+}
+.rose-petal {
+  animation: petals-drift 16s linear infinite;
+  animation-delay: calc(var(--petal-index) * -2s);
+}
+.constellation-lines path {
+  animation: constellation-draw 5s ease-out forwards;
+}
+.heart-galaxy svg .galaxy-star {
+  animation: sparkle 4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * -0.13s);
+}
+body.tab-hidden *,
+body.tab-hidden *::before,
+body.tab-hidden *::after {
+  animation-play-state: paused !important;
+}
+.transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #050014;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+  --portal-color: 139, 81, 237;
+}
+.transition-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 48%,
+    rgba(var(--portal-color), 0.24),
+    transparent 60%
+  );
+  opacity: var(--portal-opacity, 0.5);
+  z-index: -1;
+}
+.transition-overlay[data-kind="wormhole"] {
+  animation: veil-darken 2s ease-out both;
+}
+.transition-overlay[data-kind="nebula"] {
+  --portal-color: 255, 101, 197;
+}
+.transition-overlay[data-kind="shooting"] {
+  --portal-color: 148, 165, 255;
+}
+.transition-overlay[data-kind="moonlight"] {
+  --portal-color: 154, 197, 255;
+}
+.transition-overlay[data-kind="golden"] {
+  --portal-color: 238, 197, 119;
+}
+.transition-overlay canvas {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.transition-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 30px;
+  max-width: 750px;
+  width: 100%;
+}
+.transition-content .eyebrow {
+  font-size: 8px;
+  letter-spacing: 4px;
+  color: rgba(255, 235, 255, 0.65);
+}
+.transition-symbol {
+  font-size: 42px;
+  color: #ead5ff;
+  text-shadow: 0 0 25px rgba(var(--portal-color), 0.7);
+}
+#transition-phrase {
+  font: italic clamp(27px, 4vw, 48px) / 1.25 var(--serif);
+  min-height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8e9ff;
+  text-shadow: 0 2px 25px #000;
+  margin: 20px 0 25px;
+}
+.phrase-arriving {
+  animation: reveal-note 0.5s ease-out;
+}
+.transition-progress {
+  height: 1px;
+  max-width: 200px;
+  background: #ffffff20;
+  margin: 20px auto;
+}
+.transition-progress span {
+  height: 1px;
+  display: block;
+  width: 0;
+  background: #f2d4ef;
+  box-shadow: 0 0 12px #f2d4ef;
+}
+.transition-count {
+  font-size: 7px;
+  letter-spacing: 2px;
+  color: #baa3cc;
+}
+.transition-count span {
+  font-variant-numeric: tabular-nums;
+  color: #f8e3f2;
+  margin-right: 5px;
+}
+.transition-skip {
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  font-size: 11px;
+  color: #d5bddc;
+  border: 1px solid #d5bddc33;
+  border-radius: 30px;
+  padding: 10px 20px;
+  z-index: 3;
+}
+.portal-rings {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: -1;
+  opacity: var(--portal-open, 0);
+  transform: scale(var(--portal-zoom, 1));
+  transition: opacity 0.8s;
+  pointer-events: none;
+}
+.portal-rings i {
+  position: absolute;
+  width: 48vmin;
+  height: 48vmin;
+  border: 2px solid rgba(var(--portal-color), 0.5);
+  border-radius: 47%;
+  box-shadow:
+    0 0 35px rgba(var(--portal-color), 0.2),
+    inset 0 0 35px rgba(var(--portal-color), 0.2);
+  animation: portal-spin 9s linear infinite;
+}
+.portal-rings i:nth-child(2) {
+  width: 65vmin;
+  height: 65vmin;
+  border-radius: 43%;
+  animation-direction: reverse;
+  animation-duration: 13s;
+  opacity: 0.6;
+}
+.portal-rings i:nth-child(3) {
+  width: 85vmin;
+  height: 85vmin;
+  border-radius: 46%;
+  animation-duration: 17s;
+  opacity: 0.4;
+}
+.portal-rings i:nth-child(4) {
+  width: 115vmin;
+  height: 115vmin;
+  animation-direction: reverse;
+  opacity: 0.2;
+}
+.portal-rings i:nth-child(5) {
+  width: 150vmin;
+  height: 150vmin;
+  opacity: 0.15;
+}
+.transition-overlay[data-kind="nebula"] .portal-rings i {
+  border-width: 15px;
+  filter: blur(12px);
+  border-radius: 42% 58% 64% 36%;
+  animation-duration: 10s;
+}
+.transition-overlay[data-kind="shooting"] .portal-rings {
+  display: none;
+}
+.transition-overlay[data-kind="moonlight"] .portal-rings i {
+  border-radius: 50%;
+  border-width: 1px;
+  box-shadow: 0 0 65px #c3dfff40;
+  animation: portal-breathe 5s ease-in-out infinite;
+}
+.transition-overlay[data-kind="golden"] .portal-rings i {
+  border-style: dotted;
+  border-width: 4px;
+  box-shadow: none;
+  animation-duration: 20s;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .constellation-lines path {
+    stroke-dashoffset: 0;
+  }
+  .shooting-note {
+    opacity: 1;
+  }
+  .transition-overlay .portal-rings {
+    transform: none;
+    opacity: 0.25;
+  }
+  .transition-overlay .portal-rings i {
+    filter: none !important;
+  }
+  .burst-particle {
+    display: none;
+  }
+}
